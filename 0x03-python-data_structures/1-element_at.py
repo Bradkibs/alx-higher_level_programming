@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Retrieving elements using their index number"""
 
+
 def element_at(my_list, idx):
     if (idx < 0):
         return None
