@@ -12,4 +12,3 @@ def best_score(a_dictionary):
     for b in a_dictionary:
         if a_dictionary[b] == maximum:
             return b
-
