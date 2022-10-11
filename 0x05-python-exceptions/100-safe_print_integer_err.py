@@ -7,3 +7,4 @@ def safe_print_integer_err(value):
     except ValueError as VE:
         print("Exception: {}".format(VE),file=sys.stderr)
         return (False)
+    return (True)
