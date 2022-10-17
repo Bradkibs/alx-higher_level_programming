@@ -4,4 +4,5 @@
 
 
 class Rectangle:
+    """Implementation of a rectangle """
     pass
