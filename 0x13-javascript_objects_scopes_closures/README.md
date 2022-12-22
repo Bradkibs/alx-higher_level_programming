@@ -34,9 +34,8 @@
 * You are not allowed to use var
 ### More Info
 * Installing Node 14
-``` $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-    $ sudo apt-get install -y nodejs
-```
+``` $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - ```
+``` $ sudo apt-get install -y nodejs ```
 * Installing semi-standard
 ### Documentation
 
