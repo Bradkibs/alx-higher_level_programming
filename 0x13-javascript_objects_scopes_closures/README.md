@@ -1,4 +1,4 @@
-# Learning more about classes, closures object oriented Javascript which is prototypal in nature and prototypes
+# Learning more about classes, closures, object oriented Javascript which is prototypal in nature and prototypes
 * JavaScript object basics
 * Object-oriented JavaScript
 * Class - ES6
