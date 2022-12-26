@@ -13,12 +13,12 @@ from sqlalchemy.orm import sessionmaker
 
 
 if __name__ == "__main__":
-    url_params = { 'drivername' : 'mysql+mysqldb',
-        'username' : argv[1],
-        'password' : argv[2],
-        'host' : 'localhost',
-        'port' : 3306,
-        'database' : argv[3]}
+    url_params = {'drivername': 'mysql+mysqldb',
+                  'username': argv[1],
+                  'password': argv[2],
+                  'host': 'localhost',
+                  'port': 3306,
+                  'database': argv[3]}
     db_engine = create_engine(URL.create(**url_params))
     Base.metadata.create_all(db_engine)
     Session = sessionmaker(bind=db_engine)()
