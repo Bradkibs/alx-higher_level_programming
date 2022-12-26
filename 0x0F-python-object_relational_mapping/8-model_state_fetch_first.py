@@ -26,7 +26,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=db_engine)
     sess_obj = Session()
     query = sess_obj.query(State).first()
-    if not query:
+    if query is None:
         print("Nothing")
     else:
         print(query.id, query.name, sep=": ")
