@@ -10,11 +10,12 @@ from sqlalchemy import Column, Integer, String, MetaData
 Meta = MetaData()
 Base = declarative_base(metadata=Meta)
 
+
 class State(Base):
     """
     A class state to define a mapped class
     """
     __tablename__ = 'states'
-    
+
     id = Column(Integer, primary_key=True, unique=True, nullable=False)
-    name = Column(String(128), nullable = False)
+    name = Column(String(128), nullable=False)
