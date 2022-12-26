@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-a python script that prints the first state object from the db
-The results must be displayed as follows
-1: California
-or "Nothing" if the query returns nothing
+a python script that prints the id of a given state when passed on
+in the commandline as input or Nothing if the name doesn't exist
+Example: ./10-model_state_my_get.py root root hbtn_0e_6_usa Texas
+3
 """
 
 
