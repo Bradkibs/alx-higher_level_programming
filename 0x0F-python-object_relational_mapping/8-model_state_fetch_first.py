@@ -21,7 +21,7 @@ if __name__ == "__main__":
                   'host': 'localhost',
                   'port': 3306,
                   'database': argv[3]}
-    db_engine = create_engine(URL.create(**url_params), echo=True)
+    db_engine = create_engine(URL.create(**url_params))
     Base.metadata.create_all(db_engine)
     Session = sessionmaker(bind=db_engine)
     sess_obj = Session()
