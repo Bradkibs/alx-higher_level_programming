@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-a python script that inserts Louisiana into the states table
-and prints out its id
+a python script that updates the name of a State object from the database
+It changes the name of the State where id = 2 to New Mexico
 """
 
 
@@ -19,13 +19,10 @@ if __name__ == "__main__":
                   'host': 'localhost',
                   'port': 3306,
                   'database': argv[3]}
-    db_engine = create_engine(URL.create(**url_params))
+    db_engine = create_engine(URL.create(**url_params), echo=True)
     Base.metadata.create_all(db_engine)
     Session = sessionmaker(bind=db_engine)
     sess_obj = Session()
-    stmt = State(name='Louisiana')
-    sess_obj.add(stmt)
+    q = sess_obj.query(State).filter(State.id == 2)\
+                .update({'name': "New Mexico"})
     sess_obj.commit()
-    q = sess_obj.query(State).filter(State.name == "Louisiana")
-    for item in q:
-        print(item.id)
