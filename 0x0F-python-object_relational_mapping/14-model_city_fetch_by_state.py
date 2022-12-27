@@ -22,4 +22,4 @@ if __name__ == "__main__":
                     .where(State.id == City.state_id)\
                     .order_by(City.id)
     for row in query:
-        print(row[0], ": (" + str(row[1]) + ") " + row[2])
+        print(row[0] + ": (" + str(row[1]) + ") " + row[2])
